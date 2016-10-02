@@ -52,19 +52,22 @@ table {
 */ 
 
 body {
-      padding-top: 50px;
-      padding-left: 100px;
-    }
+  padding-top: 50px;
+  padding-left: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
 
 #barChartArea,
 #scatterPlotArea,
 #lineChartArea,
 #challengeArea {
-  width: 400px;
-  height: 600px;
+  width: 450px;
+  height: 550px;
   background-color: #222F47;
   margin-top: 50px;
   color: #FFF;
+  border: 3px solid green;
 }
 
 /* BAR CHART STYLES */
@@ -122,19 +125,89 @@ path {
   stroke: rgba(100, 163, 255, 0.7);
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-}
 
 .x {
   fill: #FFF;
+  font-weight: bold;
 }
 
 .y {
-  fill: rgba(255, 255, 255, 0.5);;
+  fill: rgba(255, 255, 255, 0.5);
 }
 
-.header h1 {
+svg {
+  fill: #0B3A5A;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.topHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.topHeader h1 {
   font-size: 30px;
+  font-weight: 100;
+}
+
+.topHeader button {
+  border: none;
+  background-color: #222F47;
+  color: #FFF;
+  margin: 0 10px;
+  width: 40px;
+}
+
+.topHeader button:hover{
+  font-size: 16px;
+}
+
+.topHeader button:active{
+  border: none;
+  color: #DDD;
+}
+
+.subHeader { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subHeader h2 {
+  margin: 5px auto 2px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 100;
+}
+.subHeader button{
+  border: 1px solid #FFF;
+  background-color: #222F47;
+  color: #FFF;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+}
+
+.subHeader button:hover{
+  background-color: #444F6A;
+}
+
+.subHeader button:active{
+  border: 2px solid #FFF;;
+}
+
+path.domain {
+  stroke: none;
+}
+
+line.vTick {
+  stroke: rgba(255, 255, 255, 0.1);
+}
+
+.vText {
+
 }
