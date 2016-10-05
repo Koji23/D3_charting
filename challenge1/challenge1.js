@@ -135,7 +135,7 @@ window.app = {
       .attr('stop-color', 'rgba(255, 255, 255, 0.1)');
   },
   updateHeader: function(month) {
-    // change header
+
     d3.select('#challengeArea')
       .select('h1')
       .text(app.months[month] + " 2016");

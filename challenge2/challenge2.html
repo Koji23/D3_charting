@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="main2.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <a href="http://bit.ly/linkedinjordan">Jordan Chong</a>
+      </div>
+      <div class="app">
+        <div class="sidebar">
+          <h2>Quantified Skin</h2>
+          <hr />
+          <a href="../challenge1/challenge1.html">Toggle Dashboard</a>
+        </div>
+        <div class="dashboard">
+          <div class="dataSet">
+            <table>
+              <tr class='head'>
+                <td>Time</td>
+                <td>A [0.0, 1.0]</td>
+                <td>B [0.0, 1.0]</td> 
+                <td>C [0.0, 1.0]</td>
+                <td>Weight (lbs)</td>
+                <td>Calories In</td>
+                <td>Calories Out</td>
+              </tr>
+            </table>
+            <button type="submit">Add</button>
+          </div>
+          
+          <div class="charts">
+            <div id="lineChartArea">
+              <aside class="legend">
+                <span>A</span>
+                <span>B</span>
+                <span>C</span>
+              </aside>
+              <div></div>
+            </div>
+            <div id="areaChartArea">
+              <aside class="legend">
+                <span>Calories In</span>
+                <span>Weight</span>
+                <span>Calories Out</span>
+              </aside>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+      </div>
+    </main>
+
+
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.min.js"></script>
+    <script src="challenge2.js"></script>
+    <script src="lineChart.js"></script>
+    <script src="areaChart.js"></script>
+    <script>
+      app.init()
+    </script>
+  </body>
+</html>
