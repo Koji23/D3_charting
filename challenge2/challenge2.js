@@ -53,7 +53,7 @@ window.app = {
     app.addData();
     d3.select('.dataSet button ').on('click', function(e) {
         // Next Steps: Add form validation here.
-        var newData = d3.selectAll('.formInput')[0].map(function(el) {
+        var newData = d3.selectAll('.formInput input[type="text"]')[0].map(function(el) {
           return el.value;
         });
         var newDatum = {};

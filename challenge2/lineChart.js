@@ -10,12 +10,12 @@ app.createLineChart = function() {
   
   // Reset
 
-  d3.select('.lineChart div').remove();
+  d3.select('.lineChart').remove();
   
   // SVG
 
   var svg = d3
-    .select('#lineChartArea')
+    .select('#lineChartArea div')
     .append('svg')
     .attr('class', 'lineChart')
     .attr('width', app.params.w)
